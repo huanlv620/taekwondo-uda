@@ -1,0 +1,12 @@
+{
+    "name": "safe-tour",
+    "scripts": {
+        "sass": "sass --watch sass:assets/css"
+    },
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "sass": "^1.76.0"
+    }
+}
