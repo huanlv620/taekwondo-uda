@@ -859,7 +859,7 @@ button {
 
 .footer {
   margin-top: 140px;
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 @media (max-width: 991.98px) {
   .footer {
