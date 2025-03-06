@@ -1,520 +1,656 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CLB Taekwondo UDA</title>
-        <link rel="stylesheet" href="./assets/css/main.css" />
-        <!-- embed font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Favicon -->
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-        <link
-            rel="mask-icon"
-            href="./assets/favicon/safari-pinned-tab.svg"
-            color="#5bbad5"
-        />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <!-- Logo -->
-                    <a href="#" class="logo">
-                        <img
-                            src="./assets/imgs/logo.svg"
-                            alt=""
-                            class="logo__img"
-                        />
-                    </a>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLB Taekwondo UDA</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.pinimg.com/236x/10/7a/13/107a13013ad9fa715f9634cf624e2aa8.jpg"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__row">
+            <!-- bar menu mobile -->
+            <span class="header__bar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  fill="#fff"
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </span>
 
-                    <!-- Nav -->
-                    <nav class="nav header__nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Home</a>
-                            </li>
-                            <li class="nav__item">
-                                <a
-                                    href="#about"
-                                    class="nav__link nav__link--active"
-                                >
-                                    About
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#destinations" class="nav__link"
-                                    >Destinations</a
-                                >
-                            </li>
-                            <li class="nav__item">
-                                <a href="#blogs" class="nav__link">Blog</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Pages</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <!-- logo -->
+            <a href="#" class="logo header__logo">
+              <img src="./assets/imgs/logo.svg" alt="" />
+            </a>
 
-                    <!-- Btn action -->
-                    <button class="btn header__btn">Contact</button>
-                </div>
+            <!-- nav -->
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#" class="header__link header__link--active">Home</a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">About</a>
+                </li>
+                <li class="header__item">
+                  <a href="#schedule" class="header__link">Schedule</a>
+                </li>
+                <li class="header__item">
+                  <a href="#team" class="header__link">Team</a>
+                </li>
+                <li class="header__item">
+                  <a href="#contact" class="header__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- register -->
+            <button class="header__btn">Register Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__hero">
+        <img src="./assets/imgs/hero.jpg" alt="" />
+      </div>
+    </header>
+
+    <!-- modal header on screen mobile-->
+    <div class="modal">
+      <div class="modal__container">
+        <button class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#fff"
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </button>
+
+        <div class="modal__content">
+          <!-- nav -->
+          <nav class="modal__nav">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <a href="#" class="modal__link modal__link--active">Home</a>
+              </li>
+              <li class="modal__item">
+                <a href="#about" class="modal__link">About</a>
+              </li>
+              <li class="modal__item">
+                <a href="#schedule" class="modal__link">Schedule</a>
+              </li>
+              <li class="modal__item">
+                <a href="#team" class="modal__link">Team</a>
+              </li>
+              <li class="modal__item">
+                <a href="#contact" class="modal__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <!--Info  -->
+        <section id="about" class="info">
+          <div class="info__inner">
+            <!-- Body -->
+            <div class="info__body">
+              <p class="info__sub-heading">Chúng tôi là ai?</p>
+              <h1 data-aos="zoom-in" class="info__heading">
+                CLB Taekwondo của Trường Đại Học Đông Á
+              </h1>
+              <p class="info__desc">
+                Câu lạc bộ Taekwondo của Trường Đại học Đông Á giúp sinh viên
+                nâng cao sức khỏe và rèn luyện kỹ năng võ thuật dưới sự hướng
+                dẫn của các huấn luyện viên giàu kinh nghiệm. CLB tạo ra môi
+                trường giao lưu, kết nối sinh viên có chung đam mê thông qua các
+                buổi tập luyện và hoạt động ngoại khóa sôi nổi. Tham gia CLB,
+                bạn sẽ có cơ hội phát triển toàn diện cả về thể chất lẫn tinh
+                thần, đồng thời mở rộng mạng lưới bạn bè.
+              </p>
             </div>
-        </header>
 
-        <main>
-            <div class="container">
-                <!--Info  -->
-                <section id="about" class="info">
-                    <div class="info__inner">
-                        <!-- Body -->
-                        <div class="info__body">
-                            <p class="info__sub-heading">Who we are</p>
-                            <h1 class="info__heading">
-                                We are best tourist operator
-                            </h1>
-                            <p class="info__desc">
-                                We are a small family owned, award-winning
-                                operation that specializes in providing highly
-                                personalized service to our discerning
-                                clientele. Our goal is to exceed your
-                                expectations and make your trip an unforgettable
-                                experience.
-                            </p>
-                        </div>
+            <!-- Img -->
+            <div data-aos="fade-left" class="info__img-wrap">
+              <img
+                src="./assets/imgs/info/info-1.jpg"
+                alt=""
+                class="info__img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
 
-                        <!-- Img -->
-                        <div class="info__img-wrap">
-                            <img
-                                src="./assets/imgs/info/info-1.png"
-                                alt=""
-                                class="info__img"
-                            />
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Choose us -->
-                <section id="destinations" class="choose-us">
-                    <div class="choose-us__inner">
-                        <img
-                            src="./assets/imgs/choose-us.png"
-                            alt=""
-                            class="choose-us__img"
-                        />
-                        <section class="choose-us__body">
-                            <h2 class="choose-us__heading">Why Choose Us?</h2>
-                            <p class="choose-us__sub-heading">
-                                We make all the process easy. Dummy text ever
-                                since the is, when an unknown printer took.
-                            </p>
-                            <div class="choose-us-reason-list">
-                                <!-- reason item 1 -->
-                                <div class="choose-us-reason-list__item">
-                                    <img
-                                        src="./assets/icons/choose-use-1.svg"
-                                        alt=""
-                                        class="choose-us-reason-list__icon"
-                                    />
-                                    <div class="choose-us-reason-list__body">
-                                        <h3
-                                            class="choose-us-reason-list__title"
-                                        >
-                                            We make all the process easy
-                                        </h3>
-                                        <p
-                                            class="choose-us-reason-list__sub-title"
-                                        >
-                                            A galley of type and scrambled it to
-                                            make a type when an unknown printer
-                                            took
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- reason item 2 -->
-                                <div class="choose-us-reason-list__item">
-                                    <img
-                                        src="./assets/icons/choose-use-2.svg"
-                                        alt=""
-                                        class="choose-us-reason-list__icon"
-                                    />
-                                    <div class="choose-us-reason-list__body">
-                                        <h3
-                                            class="choose-us-reason-list__title"
-                                        >
-                                            Private & Customized Tours
-                                        </h3>
-                                        <p
-                                            class="choose-us-reason-list__sub-title"
-                                        >
-                                            A galley of type and scrambled it to
-                                            make a type when an unknown printer
-                                            took
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- reason item 3 -->
-                                <div class="choose-us-reason-list__item">
-                                    <img
-                                        src="./assets/icons/choose-use-3.svg"
-                                        alt=""
-                                        class="choose-us-reason-list__icon"
-                                    />
-                                    <div class="choose-us-reason-list__body">
-                                        <h3
-                                            class="choose-us-reason-list__title"
-                                        >
-                                            Immigration & Passport Help
-                                        </h3>
-                                        <p
-                                            class="choose-us-reason-list__sub-title"
-                                        >
-                                            A galley of type and scrambled it to
-                                            make a type when an unknown printer
-                                            took
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </section>
-
-                <!-- Tour guides -->
-                <section id="blogs" class="tour-guides">
-                    <div class="tour-guides__inner">
-                        <h2 class="tour-guides__title">Meet our tour guides</h2>
-                        <div class="tour-guides__list">
-                            <!-- item 1 -->
-                            <a href="#!">
-                                <section class="tour-guides__item">
-                                    <div class="tour-guides__avatar-wrap">
-                                        <img
-                                            src="./assets/imgs/tour-guide-1.png"
-                                            alt=""
-                                            class="tour-guides__avatar"
-                                        />
-                                    </div>
-                                    <div class="tour-guides__row">
-                                        <h3 class="tour-guides__name">
-                                            Hasan Ahmed
-                                        </h3>
-                                        <div class="tour-guides__social">
-                                            <img
-                                                src="./assets/icons/facebook.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                            <img
-                                                src="./assets/icons/twitter.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                            <img
-                                                src="./assets/icons/instagram.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                        </div>
-                                    </div>
-                                    <p class="tour-guides__desc">
-                                        Adventure master
-                                    </p>
-                                </section>
-                            </a>
-
-                            <!-- item 2 -->
-                            <a href="#!">
-                                <section class="tour-guides__item">
-                                    <div class="tour-guides__avatar-wrap">
-                                        <img
-                                            src="./assets/imgs/tour-guide-2.png"
-                                            alt=""
-                                            class="tour-guides__avatar"
-                                        />
-                                    </div>
-                                    <div class="tour-guides__row">
-                                        <h3 class="tour-guides__name">
-                                            Mosqur Alam
-                                        </h3>
-                                        <div class="tour-guides__social">
-                                            <img
-                                                src="./assets/icons/facebook.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                            <img
-                                                src="./assets/icons/twitter.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                            <img
-                                                src="./assets/icons/instagram.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                        </div>
-                                    </div>
-                                    <p class="tour-guides__desc">
-                                        Adventure master
-                                    </p>
-                                </section>
-                            </a>
-
-                            <!-- item 3 -->
-                            <a href="#!">
-                                <section class="tour-guides__item">
-                                    <div class="tour-guides__avatar-wrap">
-                                        <img
-                                            src="./assets/imgs/tour-guide-3.png"
-                                            alt=""
-                                            class="tour-guides__avatar"
-                                        />
-                                    </div>
-                                    <div class="tour-guides__row">
-                                        <h3 class="tour-guides__name">
-                                            Foysal Khan
-                                        </h3>
-                                        <div class="tour-guides__social">
-                                            <img
-                                                src="./assets/icons/facebook.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                            <img
-                                                src="./assets/icons/twitter.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                            <img
-                                                src="./assets/icons/instagram.svg"
-                                                alt=""
-                                                class="tour-guides__icon"
-                                            />
-                                        </div>
-                                    </div>
-                                    <p class="tour-guides__desc">
-                                        Adventure master
-                                    </p>
-                                </section>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Subscribe -->
-                <section class="subscribe">
-                    <h2 class="subscribe__title">Subscribe our newsletter</h2>
-                    <p class="subscribe__desc">
-                        Reciev latest news, update, and many other things every
-                        week.
+        <!-- Choose us -->
+        <section id="destinations" class="choose-us">
+          <div class="choose-us__inner">
+            <img
+              data-aos="zoom-in-right"
+              src="./assets/imgs/choose-us.jpg"
+              alt=""
+              class="choose-us__img"
+              loading="lazy"
+            />
+            <section class="choose-us__body">
+              <h2
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                class="choose-us__heading"
+              >
+                Tại sao bạn nên chọn tham gia CLB Taekwondo
+              </h2>
+              <p class="choose-us__sub-heading">
+                Bạn nên chọn tham gia CLB Taekwondo để nâng cao sức khỏe, rèn
+                luyện kỹ năng tự vệ và kết nối với những người có chung đam mê.
+              </p>
+              <div class="choose-us-reason-list">
+                <!-- reason item 1 -->
+                <div
+                  data-aos="zoom-in-left"
+                  class="choose-us-reason-list__item"
+                >
+                  <img
+                    src="./assets/icons/choose-use-1.svg"
+                    alt=""
+                    class="choose-us-reason-list__icon"
+                    loading="lazy"
+                  />
+                  <div class="choose-us-reason-list__body">
+                    <h3 class="choose-us-reason-list__title">
+                      Phát triển kỹ năng võ thuật và tự vệ
+                    </h3>
+                    <p class="choose-us-reason-list__sub-title">
+                      Dưới sự hướng dẫn của các huấn luyện viên giàu kinh
+                      nghiệm, bạn sẽ nắm vững các kỹ thuật Taekwondo, trang bị
+                      cho mình những kỹ năng tự vệ hữu ích.
                     </p>
-                    <div class="subscribe__text-input">
-                        <input
-                            type="text"
-                            class="subscribe__input"
-                            placeholder="Enter Your email address"
-                        />
-                        <button class="subscribe__icon-btn">
-                            <img
-                                src="./assets/icons/send.svg"
-                                alt=""
-                                class="subscribe__icon"
-                            />
-                        </button>
+                  </div>
+                </div>
+
+                <!-- reason item 2 -->
+                <div
+                  data-aos="zoom-in-left"
+                  class="choose-us-reason-list__item"
+                >
+                  <img
+                    src="./assets/icons/choose-use-2.svg"
+                    alt=""
+                    class="choose-us-reason-list__icon"
+                    loading="lazy"
+                  />
+                  <div class="choose-us-reason-list__body">
+                    <h3 class="choose-us-reason-list__title">
+                      Nâng cao sức khỏe và thể lực
+                    </h3>
+                    <p class="choose-us-reason-list__sub-title">
+                      Tham gia CLB Taekwondo giúp bạn rèn luyện cơ thể, tăng
+                      cường sức khỏe, sự dẻo dai và khả năng chịu đựng, góp phần
+                      cải thiện lối sống lành mạnh.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- reason item 3 -->
+                <div
+                  data-aos="zoom-in-left"
+                  class="choose-us-reason-list__item"
+                >
+                  <img
+                    src="./assets/icons/choose-use-3.svg"
+                    alt=""
+                    class="choose-us-reason-list__icon"
+                    loading="lazy"
+                  />
+                  <div class="choose-us-reason-list__body">
+                    <h3 class="choose-us-reason-list__title">
+                      Giao lưu, kết nối và phát triển bản thân
+                    </h3>
+                    <p class="choose-us-reason-list__sub-title">
+                      CLB tạo môi trường giao lưu sôi nổi, giúp bạn kết nối với
+                      những người có chung đam mê, mở rộng mạng lưới bạn bè và
+                      phát triển toàn diện cả về thể
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- Tour guides -->
+        <section id="blogs" class="tour-guides">
+          <div class="tour-guides__inner">
+            <h2 data-aos="fade-down-right" class="tour-guides__title">
+              Một số thành viên
+            </h2>
+            <div class="tour-guides__list">
+              <!-- item 1 -->
+              <a href="#!">
+                <section class="tour-guides__item">
+                  <div class="tour-guides__avatar-wrap">
+                    <img
+                      src="./assets/imgs/tour-guide-1.jpg"
+                      alt=""
+                      class="tour-guides__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="tour-guides__row">
+                    <h3 class="tour-guides__name">Hasan Ahmed - Yến Nhi</h3>
+                    <div class="tour-guides__social">
+                      <img
+                        src="./assets/icons/facebook.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/twitter.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
                     </div>
-                    <img
-                        src="./assets/icons/subscribe-decor-1.svg"
-                        alt=""
-                        class="subscribe__decor"
-                    />
-                    <img
-                        src="./assets/icons/subscribe-decor-2.svg"
-                        alt=""
-                        class="subscribe__decor"
-                    />
+                  </div>
+                  <p class="tour-guides__desc">Adventure master</p>
                 </section>
+              </a>
+
+              <!-- item 2 -->
+              <a href="#!">
+                <section class="tour-guides__item">
+                  <div class="tour-guides__avatar-wrap">
+                    <img
+                      src="./assets/imgs/tour-guide-2.jpg"
+                      alt=""
+                      class="tour-guides__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="tour-guides__row">
+                    <h3 class="tour-guides__name">Mosqur Alam - Châu Nhi</h3>
+                    <div class="tour-guides__social">
+                      <img
+                        src="./assets/icons/facebook.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/twitter.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="tour-guides__desc">Adventure master</p>
+                </section>
+              </a>
+
+              <!-- item 3 -->
+              <a href="#!">
+                <section class="tour-guides__item">
+                  <div class="tour-guides__avatar-wrap">
+                    <img
+                      src="./assets/imgs/tour-guide-3.jpg"
+                      alt=""
+                      class="tour-guides__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="tour-guides__row">
+                    <h3 class="tour-guides__name">Foysal Khan - Huy</h3>
+                    <div class="tour-guides__social">
+                      <img
+                        src="./assets/icons/facebook.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/twitter.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="tour-guides__desc">Adventure master</p>
+                </section>
+              </a>
+
+              <!-- item 4 -->
+              <a href="#!">
+                <section class="tour-guides__item">
+                  <div class="tour-guides__avatar-wrap">
+                    <img
+                      src="./assets/imgs/tour-guide-4.jpg"
+                      alt=""
+                      class="tour-guides__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="tour-guides__row">
+                    <h3 class="tour-guides__name">Hasan Ahmed - Phúc</h3>
+                    <div class="tour-guides__social">
+                      <img
+                        src="./assets/icons/facebook.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/twitter.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="tour-guides__desc">Adventure master</p>
+                </section>
+              </a>
+
+              <!-- item 5 -->
+              <a href="#!">
+                <section class="tour-guides__item">
+                  <div class="tour-guides__avatar-wrap">
+                    <img
+                      src="./assets/imgs/tour-guide-5.jpg"
+                      alt=""
+                      class="tour-guides__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="tour-guides__row">
+                    <h3 class="tour-guides__name">Mosqur Alam - Hữu Đài</h3>
+                    <div class="tour-guides__social">
+                      <img
+                        src="./assets/icons/facebook.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/twitter.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="tour-guides__desc">Adventure master</p>
+                </section>
+              </a>
+
+              <!-- item 6 -->
+              <a href="#!">
+                <section class="tour-guides__item">
+                  <div class="tour-guides__avatar-wrap">
+                    <img
+                      src="./assets/imgs/tour-guide-6.jpg"
+                      alt=""
+                      class="tour-guides__avatar"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="tour-guides__row">
+                    <h3 class="tour-guides__name">Foysal Khan - Ngọc Thương</h3>
+                    <div class="tour-guides__social">
+                      <img
+                        src="./assets/icons/facebook.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/twitter.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                      <img
+                        src="./assets/icons/instagram.svg"
+                        alt=""
+                        class="tour-guides__icon"
+                      />
+                    </div>
+                  </div>
+                  <p class="tour-guides__desc">Adventure master</p>
+                </section>
+              </a>
             </div>
-        </main>
+          </div>
+        </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__row">
-                    <!-- Col 1 -->
-                    <div class="footer__col">
-                        <h3 class="footer__title">Resources</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link">Download </a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >Help Center</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link">Guide Book</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >App Directory</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
+        <!-- Tour guides -->
+        <div class="activities">
+          <h2 data-aos="flip-up" class="activities__heading">
+            Hoạt động của Câu lạc bộ
+          </h2>
+          <section class="activities__inner">
+            <!-- left -->
+            <section class="activities__left">
+              <ul class="activities__list">
+                <li class="activities__item">
+                  <h3 data-aos="zoom-in" class="activities__title">
+                    Trò Chơi Đồng Đội
+                  </h3>
+                  <p class="activities__desc line-clamp line-4">
+                    Các thành viên tham gia vào các trò chơi đồng đội như kéo
+                    co, tìm kho báu hay xây tháp bằng gỗ. Những trò chơi này
+                    giúp tăng cường sự gắn kết và tinh thần đồng đội. Các thành
+                    viên tham gia vào các trò chơi đồng đội như kéo co, tìm kho
+                    báu hay xây tháp bằng gỗ. Những trò chơi này giúp tăng cường
+                    sự gắn kết và tinh thần đồng đội.
+                  </p>
+                </li>
+                <li class="activities__item">
+                  <h3 data-aos="zoom-in-down" class="activities__title">
+                    Dã Ngoại Cuối Tuần
+                  </h3>
+                  <p class="text activities__desc line-clamp line-4">
+                    Câu lạc bộ tổ chức các chuyến dã ngoại cuối tuần, kết hợp
+                    giữa tập luyện ngoài trời và các hoạt động vui chơi. Đây là
+                    cơ hội để các thành viên thư giãn và gắn kết với nhau ngoài
+                    phòng tập.
+                  </p>
+                </li>
+                <li class="activities__item">
+                  <h3 data-aos="zoom-in-right" class="activities__title">
+                    Kiểm Tra Nâng Đai
+                  </h3>
+                  <p class="text activities__desc line-clamp line-4">
+                    Học viên được đánh giá và kiểm tra kỹ năng để tiến tới cấp
+                    độ đai cao hơn. Hoạt động này khuyến khích học viên không
+                    ngừng nỗ lực và phấn đấu trong quá trình tập luyện.
+                  </p>
+                </li>
+              </ul>
+            </section>
 
-                    <!-- Col 2 -->
-                    <div class="footer__col">
-                        <h3 class="footer__title">Travellers</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >Why Travellers</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link">Enterprice</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >Customer Stories</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >Instagram post</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Col 3 -->
-                    <div class="footer__col">
-                        <h3 class="footer__title">Company</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link">Travelling</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >About Locato</a
-                                >
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link">Success</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#!" class="footer__link"
-                                    >Information</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Col 4 -->
-                    <div class="footer__col">
-                        <h3 class="footer__title">Get in Touch</h3>
-                        <p class="footer__text">
-                            Feel free to get in touch with us vai email
-                        </p>
-                        <a
-                            href="mailto:safetour@safetour.com"
-                            class="footer__email"
-                            >safetour@safetour.com</a
-                        >
-                    </div>
-                </div>
-
-                <div class="footer__bottom">
-                    <!-- Logo -->
-                    <a href="#" class="logo">
-                        <img
-                            src="./assets/imgs/logo.svg"
-                            alt=""
-                            class="logo__img"
-                        />
-                    </a>
-
-                    <!-- Nav -->
-                    <nav class="nav footer__nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a
-                                    href="#"
-                                    class="nav__link footer__link--active"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="nav__item">
-                                <a href="#about" class="nav__link"> About </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#destinations" class="nav__link"
-                                    >Destinations</a
-                                >
-                            </li>
-                            <li class="nav__item">
-                                <a href="#blogs" class="nav__link">Blog</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#!" class="nav__link">Pages</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <!-- Social -->
-                    <div class="footer__social">
-                        <a href="#!">
-                            <img
-                                src="./assets/icons/facebook.svg"
-                                alt=""
-                                class="footer__icon"
-                            />
-                        </a>
-                        <a href="#!">
-                            <img
-                                src="./assets/icons/instagram.svg"
-                                alt=""
-                                class="footer__icon"
-                            />
-                        </a>
-                        <a href="#!">
-                            <img
-                                src="./assets/icons/twitter.svg"
-                                alt=""
-                                class="footer__icon"
-                            />
-                        </a>
-                    </div>
-                </div>
+            <!-- right -->
+            <div data-aos="zoom-out-left" class="activities__right">
+              <div class="activities__img-wrap">
+                <img
+                  loading="lazy"
+                  src="./assets/imgs/activities.avif"
+                  alt=""
+                  class="activities__img"
+                />
+                <img
+                  loading="lazy"
+                  src="./assets/imgs/activities-1.webp"
+                  alt=""
+                  class="activities__img"
+                />
+                <img
+                  loading="lazy"
+                  src="./assets/imgs/activities-2.webp"
+                  alt=""
+                  class="activities__img"
+                />
+              </div>
             </div>
-        </footer>
-    </body>
+          </section>
+        </div>
+
+        <!-- Our  -->
+        <section class="our">
+          <div class="our__inner">
+            <h2 class="our__heading">Hình ảnh khác</h2>
+            <p class="our__desc text">
+              Quality country-style menu selection, friendly and efficient
+              service, combined with genuine value has kept Our Best serving
+              families like yours for over 28.
+            </p>
+
+            <div class="our__masonry">
+              <img class="our__img" src="./assets/imgs/our/our.jpg" alt="" />
+              <img class="our__img" src="./assets/imgs/our/our-1.jpg" alt="" />
+              <img class="our__img" src="./assets/imgs/our/our-2.jpg" alt="" />
+              <img class="our__img" src="./assets/imgs/our/our-4.jpg" alt="" />
+              <img class="our__img" src="./assets/imgs/our/our-5.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Address -->
+        <section class="address">
+          <div class="address__inner">
+            <h2 class="address__heading">Địa chỉ CLB</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.6440599728758!2d108.21872757589186!3d16.032034040431004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218389cf02c2b%3A0xbdc63233587e2d88!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyDEkMO0bmcgw4E!5e0!3m2!1svi!2s!4v1719292257411!5m2!1svi!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/009/489/010/non_2x/taekwondo-logo-free-vector.jpg"
+              alt=""
+              class="footer__logo"
+            />
+            <p class="footer__desc">
+              Đây là nơi sinh viên có thể giao lưu, kết nối và phát triển toàn
+              diện về thể chất và tinh thần qua các hoạt động luyện tập và ngoại
+              khóa.
+            </p>
+            <h2 class="footer__heading">Our team</h2>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__heading">Contact</h3>
+            <!-- Fb -->
+            <a
+              href="https://www.facebook.com/ClbTaekwondoUDA"
+              class="footer__link"
+              target="_blank"
+            >
+              <img
+                src="./assets/icons/facebook.svg"
+                alt=""
+                class="footer__icon"
+              />
+              <p class="footer__desc">CLB Taekwondo Đại Học Đông Á</p>
+            </a>
+
+            <!-- Email -->
+            <a
+              href="mailto:clbtwduda@gmail.com"
+              class="footer__link"
+              target="_blank"
+            >
+              <img src="./assets/icons/email.svg" alt="" class="footer__icon" />
+              <p class="footer__desc">clbtwduda@gmail.com</p>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel: 098134324" class="footer__link" target="_blank">
+              <img src="./assets/icons/phone.svg" alt="" class="footer__icon" />
+              <p class="footer__desc">0987654321</p>
+            </a>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__heading">Follow US</h3>
+            <div class="footer__socials">
+              <a
+                href="https://www.facebook.com/ClbTaekwondoUDA"
+                class="footer__social-link footer__social-link--fb"
+                target="_blank"
+              >
+                <img src="./assets/icons/facebook.svg" alt=""
+              /></a>
+              <a href="#!" class="footer__social-link footer__social-link--tw">
+                <img src="./assets/icons/twitter.svg" alt=""
+              /></a>
+
+              <a href="#!" class="footer__social-link footer__social-link--tt">
+                <img src="./assets/icons/tiktok.svg" alt=""
+              /></a>
+
+              <a href="#!" class="footer__social-link footer__social-link--ytb">
+                <img src="./assets/icons/youtube.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./script.js"></script>
+  </body>
 </html>
