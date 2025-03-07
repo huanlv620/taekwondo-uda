@@ -745,7 +745,7 @@ html {
 }
 .footer__heading {
   margin-bottom: 20px;
-  color: #2d3134;
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: 600;
   line-height: 150%;
