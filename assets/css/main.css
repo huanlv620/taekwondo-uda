@@ -252,6 +252,11 @@ button {
   line-height: 125%;
 }
 
+.heading.title {
+  margin-top: 30px;
+  font-size: 2.8rem;
+}
+
 .desc {
   color: #676a6c;
   font-size: 1.6rem;
@@ -426,9 +431,9 @@ button {
     height: 50vh;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .header__hero {
-    height: 40vh;
+    display: none;
   }
 }
 .header__hero img {
@@ -504,13 +509,15 @@ button {
     font-size: 2.8rem;
   }
 }
+.activiti__desc {
+  margin-bottom: 10px;
+}
 @media (max-width: 575.98px) {
   .activiti__desc, .activiti__item {
     font-size: 1.4rem;
   }
 }
 .activiti__list {
-  list-style: initial;
   padding: 0 30px;
 }
 .activiti__item {
@@ -526,7 +533,8 @@ button {
 @media (max-width: 575.98px) {
   .activiti__body {
     grid-template-columns: 1fr;
-    gap: 10px;
+    row-gap: 10px;
+    column-gap: 0;
     grid-auto-rows: initial;
     grid-auto-flow: initial;
   }
@@ -536,6 +544,13 @@ button {
 }
 .activiti__img-wrap--wide {
   grid-column: span 2;
+  gap: 10px;
+}
+@media (max-width: 575.98px) {
+  .activiti__img-wrap--wide {
+    grid-column: initial;
+    gap: initial;
+  }
 }
 .activiti__img-wrap--big {
   grid-column: span 2;
@@ -573,7 +588,7 @@ button {
 
 .schedule {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px 0;
 }
 @media (max-width: 575.98px) {
   .schedule {
