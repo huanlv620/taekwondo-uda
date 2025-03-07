@@ -34,14 +34,14 @@
             </span>
 
             <!-- logo -->
-            <a href="#" class="logo header__logo">
+            <!-- <a href="#" class="logo header__logo">
               <img
                 src="./assets/imgs/logotwd.jpg"
                 alt=""
                 class="footer__logo"
                 alt=""
               />
-            </a>
+            </a> -->
 
             <!-- nav -->
             <nav class="header__nav">
@@ -64,9 +64,19 @@
               </ul>
             </nav>
 
-            <!-- register -->
-            <button id="theme-toggle" class="theme-toggle header__btn">
+            <!-- toggle theme -->
+            <button
+              id="theme-toggle"
+              class="theme-toggle header__btn theme-toggle--lg"
+            >
               <span> 🌙</span> Dark Mode
+            </button>
+
+            <button
+              id="theme-toggle"
+              class="theme-toggle header__btn theme-toggle--md"
+            >
+              🌙
             </button>
           </div>
         </div>
@@ -114,6 +124,7 @@
         </div>
       </div>
     </div>
+
     <main>
       <div class="container">
         <!--Info  -->
@@ -189,7 +200,7 @@
         </section>
 
         <!-- activiti -->
-        <section class="activiti">
+        <section id="schedule" class="activiti">
           <div class="activiti__top">
             <h2 class="heading activiti__heading">Các hoạt động của CLB</h2>
             <p class="activiti__desc desc">
@@ -681,7 +692,7 @@
         </section>
 
         <!-- Address -->
-        <section class="address">
+        <section id="team" class="address">
           <div class="address__inner">
             <h2 class="address__heading">Địa chỉ CLB</h2>
             <iframe
@@ -699,7 +710,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__col">

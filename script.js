@@ -1,7 +1,7 @@
 const headerBar = document.querySelector(".header__bar");
 const modalClose = document.querySelector(".modal__close");
 const modal = document.querySelector(".modal");
-const themeToggle = document.querySelector("#theme-toggle");
+const themeToggle = document.querySelectorAll(".theme-toggle");
 const html = document.documentElement;
 
 headerBar.onclick = () => {
@@ -18,13 +18,39 @@ modal.onclick = (e) => {
   }
 };
 
-themeToggle.onclick = (e) => {
-  themeToggle.classList.toggle("dark-mode");
-  if (themeToggle.classList.contains("dark-mode")) {
-    themeToggle.innerHTML = "<span >🌞</span> Light Mode";
-    html.classList.add("dark");
-  } else {
-    themeToggle.innerHTML = "<span> 🌙</span> Dark Mode";
-    html.classList.remove("dark");
-  }
-};
+themeToggle.forEach((item) => {
+  item.onclick = (e) => {
+    item.classList.toggle("dark-mode");
+    html.classList.toggle("dark");
+    if (
+      item.classList.contains("theme-toggle--md") &&
+      item.classList.contains("dark-mode")
+    ) {
+      item.innerHTML = "🌙";
+      return;
+    }
+
+    if (
+      item.classList.contains("theme-toggle--md") &&
+      !item.classList.contains("dark-mode")
+    ) {
+      item.innerHTML = "🌞";
+      return;
+    }
+
+    if (
+      item.classList.contains("theme-toggle--lg") &&
+      item.classList.contains("dark-mode")
+    ) {
+      item.innerHTML = "<span >🌞</span> Light Mode";
+      return;
+    }
+    if (
+      item.classList.contains("theme-toggle--lg") &&
+      !item.classList.contains("dark-mode")
+    ) {
+      item.innerHTML = "<span> 🌙</span> Dark Mode";
+      return;
+    }
+  };
+});
