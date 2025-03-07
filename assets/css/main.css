@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body,
 div,
@@ -147,9 +146,10 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
+  background: #292e39;
 }
 
 a {
@@ -250,17 +250,20 @@ button {
   font-size: 4rem;
   font-weight: 700;
   line-height: 125%;
+  color: #fff;
 }
 
 .heading.title {
-  margin-top: 30px;
+  margin-top: 70px;
   font-size: 2.8rem;
+  color: #fff;
 }
 
 .desc {
   color: #676a6c;
   font-size: 1.6rem;
   line-height: 162.5%;
+  color: #fff;
 }
 
 .modal {
@@ -315,7 +318,7 @@ button {
   right: 0;
   z-index: 999;
   padding: 15px 30px;
-  background: #121212;
+  background: #171c28;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 575.98px) {
@@ -394,19 +397,17 @@ button {
   color: #00adb5;
 }
 .header__btn {
-  background-color: transparent; /* Nền trong suốt */
-  color: #e0e0e0; /* Màu chữ */
-  border: 2px solid #e0e0e0; /* Viền nhẹ */
+  background-color: #ffb700;
+  color: #171c28;
   padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
-  border-radius: 8px; /* Bo góc */
+  border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
 }
 .header__btn:hover {
-  background-color: #00adb5;
-  border-color: #00adb5;
+  opacity: 0.8;
 }
 @media (max-width: 991.98px) {
   .header__btn {
@@ -461,7 +462,7 @@ button {
 }
 .info__heading {
   margin: 10px 0 20px;
-  color: #2d3134;
+  color: #fff;
   font-size: 6.2rem;
   font-weight: 700;
   line-height: 112.903%;
@@ -471,8 +472,12 @@ button {
     font-size: 2.8rem;
   }
 }
+.info__body {
+  padding: 15px;
+  background: #171c28;
+  border-radius: 16px;
+}
 .info__desc {
-  color: #676a6c;
   font-size: 1.6rem;
   line-height: 162.5%;
 }
@@ -510,6 +515,9 @@ button {
   }
 }
 .activiti__desc {
+  padding: 15px;
+  background: #171c28;
+  border-radius: 16px;
   margin-bottom: 10px;
 }
 @media (max-width: 575.98px) {
@@ -518,7 +526,9 @@ button {
   }
 }
 .activiti__list {
-  padding: 0 30px;
+  padding: 15px;
+  background: #171c28;
+  border-radius: 16px;
 }
 .activiti__item {
   padding: 10px 0;
@@ -621,6 +631,9 @@ button {
 .schedule__table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+.schedule__table tr:nth-child(odd) {
+  background-color: #87f1ec;
+}
 .schedule__table tr:hover {
   background-color: #ffe680;
 }
@@ -665,7 +678,7 @@ button {
 }
 .footer__desc {
   margin: 10px 0;
-  color: #676a6c;
+  color: #fff;
   font-family: Inter;
   font-size: 1.6rem;
   font-style: normal;
@@ -680,16 +693,16 @@ button {
 }
 .footer__link {
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 .footer__link:hover img {
-  translate: 0 -3px;
+  transform: scaleX(1.5);
 }
 .footer__icon {
   display: block;
   width: 18px;
   transition-duration: 0.3s;
-  filter: brightness(0) saturate(100%) invert(44%) sepia(1%) saturate(2660%) hue-rotate(132deg) brightness(93%) contrast(89%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(200deg) brightness(101%) contrast(102%);
 }
 .footer__socials {
   display: flex;
