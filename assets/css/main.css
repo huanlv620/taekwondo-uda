@@ -216,6 +216,11 @@ button {
   width: 80px;
   height: 80px;
 }
+@media (max-width: 575.98px) {
+  .logo {
+    display: none;
+  }
+}
 .logo img {
   width: 100%;
   height: 100%;
@@ -308,6 +313,11 @@ button {
   background: #121212;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+@media (max-width: 575.98px) {
+  .header__top {
+    padding: 30px;
+  }
+}
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -338,6 +348,11 @@ button {
 .header__logo {
   width: 80px;
   height: 80px;
+}
+@media (max-width: 575.98px) {
+  .header__logo {
+    display: none;
+  }
 }
 .header__logo img {
   width: 100%;
@@ -426,6 +441,12 @@ button {
   margin-top: 140px;
   padding: 0 30px;
 }
+@media (max-width: 575.98px) {
+  .info {
+    margin-top: 70px;
+    padding: 0 10px;
+  }
+}
 .info__sub-heading {
   color: #ff7b29;
   font-family: Inter;
@@ -440,10 +461,20 @@ button {
   font-weight: 700;
   line-height: 112.903%;
 }
+@media (max-width: 575.98px) {
+  .info__heading {
+    font-size: 2.8rem;
+  }
+}
 .info__desc {
   color: #676a6c;
   font-size: 1.6rem;
   line-height: 162.5%;
+}
+@media (max-width: 575.98px) {
+  .info__desc {
+    font-size: 1.4rem;
+  }
 }
 .info__desc + .info__desc {
   margin-top: 15px;
@@ -459,8 +490,24 @@ button {
   margin-top: 140px;
   padding: 0 30px;
 }
+@media (max-width: 575.98px) {
+  .activiti {
+    margin-top: 70px;
+    padding: 0 10px;
+  }
+}
 .activiti__heading {
   margin-bottom: 10px;
+}
+@media (max-width: 575.98px) {
+  .activiti__heading {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .activiti__desc, .activiti__item {
+    font-size: 1.4rem;
+  }
 }
 .activiti__list {
   list-style: initial;
@@ -475,6 +522,14 @@ button {
   grid-auto-rows: 300px;
   grid-auto-flow: dense;
   gap: 10px;
+}
+@media (max-width: 575.98px) {
+  .activiti__body {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-auto-rows: initial;
+    grid-auto-flow: initial;
+  }
 }
 .activiti__img-wrap--tall {
   grid-row: span 2;
@@ -505,15 +560,26 @@ button {
 }
 .address__heading {
   color: #2d3134;
-  font-size: 40;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 125%;
   margin-bottom: 30px;
+}
+@media (max-width: 575.98px) {
+  .address__heading {
+    font-size: 2.8rem;
+  }
 }
 
 .schedule {
   text-align: center;
   padding: 40px 20px;
+}
+@media (max-width: 575.98px) {
+  .schedule {
+    margin-top: 70px;
+    padding: 0 10px;
+  }
 }
 .schedule__heading {
   font-size: 2rem;
