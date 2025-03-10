@@ -1,7 +1,7 @@
 const headerBar = document.querySelector(".header__bar");
 const modalClose = document.querySelector(".modal__close");
 const modal = document.querySelector(".modal");
-const themeToggle = document.querySelectorAll(".theme-toggle");
+const inputCheckedToggle = document.querySelector("#dark-mode");
 const html = document.documentElement;
 
 headerBar.onclick = () => {
@@ -18,39 +18,22 @@ modal.onclick = (e) => {
   }
 };
 
-themeToggle.forEach((item) => {
-  item.onclick = (e) => {
-    item.classList.toggle("dark-mode");
-    html.classList.toggle("dark");
-    if (
-      item.classList.contains("theme-toggle--md") &&
-      item.classList.contains("dark-mode")
-    ) {
-      item.innerHTML = "🌙";
-      return;
-    }
+const checkStatus = JSON.parse(localStorage.getItem("checkToggle"));
 
-    if (
-      item.classList.contains("theme-toggle--md") &&
-      !item.classList.contains("dark-mode")
-    ) {
-      item.innerHTML = "🌞";
-      return;
-    }
+if (checkStatus) {
+  inputCheckedToggle.setAttribute("checked", "checked");
+  html.classList.add("dark");
+} else {
+  inputCheckedToggle.removeAttribute("checked");
+  html.classList.remove("dark");
+}
 
-    if (
-      item.classList.contains("theme-toggle--lg") &&
-      item.classList.contains("dark-mode")
-    ) {
-      item.innerHTML = "<span >🌞</span> Light Mode";
-      return;
-    }
-    if (
-      item.classList.contains("theme-toggle--lg") &&
-      !item.classList.contains("dark-mode")
-    ) {
-      item.innerHTML = "<span> 🌙</span> Dark Mode";
-      return;
-    }
-  };
+inputCheckedToggle.addEventListener("change", (event) => {
+  if (event.currentTarget.checked) {
+    html.classList.add("dark");
+    localStorage.setItem("checkToggle", true);
+  } else {
+    html.classList.remove("dark");
+    localStorage.removeItem("checkToggle");
+  }
 });
