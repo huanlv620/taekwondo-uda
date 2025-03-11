@@ -269,7 +269,7 @@ button {
 
 .modal {
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
@@ -280,7 +280,6 @@ button {
 .modal.show {
   opacity: 1;
   visibility: visible;
-  z-index: 9999;
 }
 .modal__container {
   position: absolute;
@@ -288,7 +287,7 @@ button {
   bottom: 0;
   top: 0;
   padding: 30px;
-  background: #292e39;
+  background: var(--modal-container-bg);
   width: 70vw;
   transform: translateX(-100%);
   transition: transform 0.3s;
@@ -299,6 +298,7 @@ button {
 .modal__close {
   width: 24px;
   height: 24px;
+  color: var(--modal-icon-close-color);
 }
 .modal__content {
   margin-top: 30px;
@@ -307,7 +307,7 @@ button {
   display: block;
   font-size: 1.6rem;
   padding: 10px 0;
-  color: #fff;
+  color: var(--text-color);
 }
 .modal__link:hover {
   text-decoration: underline;
@@ -322,8 +322,14 @@ html.dark {
     saturate(0%) hue-rotate(118deg) brightness(109%) contrast(103%);
   --toggle-btn-bg: #2e80ce;
   --info-bg: #171c28;
-  --icon-filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+  --icon-filter-fb: brightness(0) saturate(100%) invert(100%) sepia(0%)
     saturate(0%) hue-rotate(200deg) brightness(101%) contrast(102%);
+  --icon-filter-email: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(0%) hue-rotate(200deg) brightness(101%) contrast(102%);
+  --icon-filter-phone: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(0%) hue-rotate(200deg) brightness(101%) contrast(102%);
+  --modal-container-bg: #292e39;
+  --modal-icon-close-color: #fff;
 }
 
 html {
@@ -335,10 +341,28 @@ html {
     saturate(0%) hue-rotate(146deg) brightness(97%) contrast(100%);
   --toggle-btn-bg: #2c3e50;
   --info-bg: #eee;
-  --icon-filter: brightness(0) saturate(100%) invert(93%) sepia(18%)
-    saturate(5%) hue-rotate(84deg) brightness(87%) contrast(87%);
+  --icon-filter-fb: brightness(0) saturate(100%) invert(43%) sepia(94%)
+    saturate(4219%) hue-rotate(203deg) brightness(97%) contrast(96%);
+  --icon-filter-email: brightness(0) saturate(100%) invert(27%) sepia(19%)
+    saturate(7271%) hue-rotate(347deg) brightness(108%) contrast(76%);
+  --icon-filter-phone: brightness(0) saturate(100%) invert(59%) sepia(42%)
+    saturate(691%) hue-rotate(84deg) brightness(84%) contrast(88%);
+  --modal-container-bg: #fff;
+  --modal-icon-close-color: brightness(0) saturate(100%) invert(8%) sepia(10%)
+    saturate(4042%) hue-rotate(212deg) brightness(90%) contrast(95%);
 }
 
+@keyframes shake {
+  0%, 100% {
+    translate: 0;
+  }
+  25%, 75% {
+    translate: 4px;
+  }
+  50% {
+    translate: -4px;
+  }
+}
 .header__top {
   position: fixed;
   top: 0;
@@ -621,11 +645,18 @@ html {
     grid-row: initial;
   }
 }
+.activiti__img-wrap {
+  overflow: hidden;
+}
 .activiti__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s;
+}
+.activiti__img:hover {
+  transform: scale(1.2);
 }
 
 .address {
@@ -706,7 +737,7 @@ html {
 @media (max-width: 575.98px) {
   .footer {
     margin-top: 70px;
-    padding: 20 10px;
+    padding: 20px 10px 30px;
   }
 }
 .footer__inner {
@@ -749,15 +780,24 @@ html {
 .footer__link {
   display: flex;
   gap: 10px;
+  animation: shake 0.5s;
 }
 .footer__link:hover img {
-  transform: scaleX(1.5);
+  animation: shake 0.5s;
 }
 .footer__icon {
   display: block;
   width: 18px;
   transition-duration: 0.3s;
-  filter: var(--icon-filter);
+}
+.footer__icon--fb {
+  filter: var(--icon-filter-fb);
+}
+.footer__icon--email {
+  filter: var(--icon-filter-email);
+}
+.footer__icon--phone {
+  filter: var(--icon-filter-phone);
 }
 .footer__socials {
   display: flex;
