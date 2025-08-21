@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taekwondo-uda.vercel.app/sitemap.xml

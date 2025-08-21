@@ -514,7 +514,7 @@ html {
 
 .info {
   margin-top: 140px;
-  padding: 0 30px;
+  padding: 50px 30px;
 }
 @media (max-width: 575.98px) {
   .info {
@@ -565,8 +565,8 @@ html {
 }
 
 .activiti {
-  margin-top: 140px;
-  padding: 0 30px;
+  margin-top: 100px;
+  padding: 80px 30px 0 30px;
 }
 @media (max-width: 575.98px) {
   .activiti {
